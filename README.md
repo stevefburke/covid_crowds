@@ -1,11 +1,12 @@
 # covid_crowds
 
-Baseline Model:
+Baseline Yolov2 Model:
 
-To perform inference using the coursera yolo model, you must substitute the coursera .ipynb file with "yolo_coursera_modified.ipynb", which allows for performing inference on a set of images of different sizes, and also substitte in the modified "yolo_utils.py" file into the coursera utils folder.  The COVID test data is in the test_data folder.
+To perform inference using the pre-trained coursera yolo model, you must substitute the coursera .ipynb file with "yolo_coursera_modified.ipynb", which allows for performing inference on a test set of multiple images of different sizes, and also substitte in the modified "yolo_utils.py" file into the coursera utils folder.  The COVID test data is in the test_data folder. You must have access to the coursera project in order to do this, I ran into trouble in configuring the .h5 model file outside of that environment. 
 
 
-Yolov3 model:
+
+Yolov3 Model:
 
 Files to assist in performing transfer learning on a pre-trained yolov3 network with the Hollywood image dataset, are located in the data_processing_scripts folder. You can perform the transfer learning with these steps:
 
@@ -15,7 +16,7 @@ Files to assist in performing transfer learning on a pre-trained yolov3 network 
 
 3) Use the "convert_to_csv.py" file to convert the subset of .xml annotations to a .csv file, so that the data is compatible with the next steps.
 
-4) Follow the steps here for setting up environment, downloading the pre-loaded model weights, configuring the annotations for keras, training on the model with additional data, and performing inference on a test dataset: https://blog.insightdatascience.com/how-to-train-your-own-yolov3-detector-from-scratch-224d10e55de2
+4) Follow the steps here for setting up environment, downloading the pre-trained yolov3 model weights, configuring the annotations for keras, training on the model with additional data, and performing inference on a test dataset: https://blog.insightdatascience.com/how-to-train-your-own-yolov3-detector-from-scratch-224d10e55de2
 
 Note: these steps do not yet auto-analyze the inference results for precision and recall information, so that analysis must be done manually on the test dataset. 
 

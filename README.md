@@ -4,7 +4,8 @@ Baseline Yolov2 Model:
 
 To perform inference using the pre-trained coursera yolo model, you must substitute the coursera .ipynb file with "yolo_coursera_modified.ipynb", which allows for performing inference on a test set of multiple images of different sizes, and also substitte in the modified "yolo_utils.py" file into the coursera utils folder.  The COVID test data is in the test_data folder. You must have access to the coursera project in order to do this, I ran into trouble in configuring the .h5 model file outside of that environment. 
 
-
+<br />
+<br />
 
 Yolov3 Model:
 
